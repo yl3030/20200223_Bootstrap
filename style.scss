@@ -1,0 +1,88 @@
+$s-color: #d66e71;
+$a-color: #d3888d;
+$b-color: #fdf7f2;
+$title-padding: 30px 0;
+// Bootstrap樣式
+
+// 自己的樣式
+// 導覽列
+.navbar {
+	background-color: #f9e4d1 !important;
+
+	#navbarNav {
+		.nav-link {
+			color: $s-color !important;
+		}
+	}
+}
+// 輪播圖
+.carousel-caption {
+	bottom: 40%;
+}
+// card
+h1 {
+	padding: $title-padding;
+}
+
+.card-icon {
+	width: 100px;
+	height: 100px;
+	background-color: #fbebd2;
+	border-radius: 50% !important;
+	cursor: pointer;
+	box-sizing: content-box;
+	&:hover {
+		background-color: #f4cfcf;
+	}
+}
+
+.card-title {
+	color: $s-color;
+}
+
+.btn {
+	background-color: $s-color;
+	border: 0;
+	&:hover {
+		background-color: $a-color;
+	}
+}
+
+// news
+.news {
+	background-color: $b-color;
+
+	h1 {
+		padding: $title-padding;
+	}
+	.content-box {
+		align-items: center;
+
+		.news-pic {
+			width: 80px;
+			height: 80px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
+
+// 聯絡我
+.contact {
+	h1 {
+		padding: $title-padding;
+	}
+}
+
+// footer
+.footer {
+	background-color: $b-color;
+}
+
+// RWD
+@media screen and(min-width: 1024px) {
+	.carousel-item {
+		height: 80vh;
+	}
+}
